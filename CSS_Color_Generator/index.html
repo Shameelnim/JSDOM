@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS_CODE_GENERATOR | EVERYONE LEARN TECH</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>CSS_CODE_GENERATOR</h2>
+      <div class="coding-place" id="coding-place">
+        <div class="coding-container" id="coding-container">
+          <label for="br">Border Radius</label>
+          <input type="range" id="br" />
+          <br />
+          <label for="border">Border width</label>
+          <input type="range" id="border" />
+          <br />
+
+          <label for="boder-color">Border-COlor</label>
+          <input type="text" id="boder_color" />
+          <br />
+
+          <button onclick="Generate()">Submit</button>
+        </div>
+        <div class="output-place" id="output_place"></div>
+      </div>
+      <code id="code"></code>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

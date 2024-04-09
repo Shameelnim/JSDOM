@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password_Generator</title>
+</head>
+<body>
+    <input type="text" id="password_value" readonly>
+    <button onclick="Copy()">Copy to clipboard</button>
+    <button onclick="Generate()">Generate</button>
+    <script>
+        let up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		let lower = up.toLocaleLowerCase()
+		let number= "0123456789"
+		let symbol = "!@$%^&*()~?{}>:><"
+		const allChar = up+lower+number+symbol
+		let length = 8
+
+        function Generate(){
+            let password= '';
+            password += up[Math.floor(Math.random()*up.length)]
+            password += lower[Math.floor(Math.random()*lower.length)]
+            password += symbol[Math.floor(Math.random()*up.length)]
+            password += number[Math.floor(Math.random()*number.length)]
+
+            while(length>password.length){
+            password += allChar[Math.floor(Math.random()*allChar.length)]
+             
+            }
+            password_value.value = password
+
+        }
+        const Copy =()=>{
+            password_value.select()
+            document.execCommand('copy')
+        }
+            </script>
+</body>
+</html>

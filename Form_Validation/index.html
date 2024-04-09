@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form_Validation using Javascript</title>
+  </head>
+  <body>
+    <form>
+      <div class="username-field">
+        <label>Username</label>
+        <br />
+
+        <input type="text" id="username" required />
+     
+      </div>
+      <div class="email-field">
+        <label>Email</label>
+        <br />
+
+        <input type="text" id="email" required />
+      
+      </div>
+      <div class="password-field">
+        <label for="">Password</label>
+        <br />
+
+        <input type="password" id="password" required />
+       
+      </div>
+      <div class="password2-field">
+        <label for="">Password 2</label>
+        <br />
+
+        <input type="password" id="password2" required />
+        <span id="output"></span>
+      </div>
+      <button onclick="Validate()">Submit</button>
+      <input type="radio" onclick="See()" />Show Password
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

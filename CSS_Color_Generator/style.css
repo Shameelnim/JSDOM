@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgb(3, 255, 3);
+  border-radius: 10px;
+}
+
+.output-place {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.coding-place {
+  display: flex;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(42, 42, 243);
+  border: none;
+}
+
+code {
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+}

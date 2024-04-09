@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  color: white;
+  flex-direction: column;
+}
+
+ul li {
+  background: linear-gradient(to right, rgb(27, 27, 27), gold);
+  background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+}
+
+input {
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  background-color: greenyellow;
+  border: none;
+  border: none;
+  margin-top: 10px;
+}

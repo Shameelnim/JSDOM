@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+</head>
+<body>
+    <h3>Text TO Speech</h3>
+    <input type="text" id="text">
+    <button onclick="Speak()">Submit</button>
+    <script>
+        let speech = new SpeechSynthesisUtterance();
+        function Speak(){
+            speech.text = text.value
+            window.speechSynthesis.speak(speech)
+            
+        }
+    
+    </script>
+</body>
+</html>

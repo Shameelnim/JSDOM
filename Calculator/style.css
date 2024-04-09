@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: firebrick;
+}
+.calculator {
+  display: grid;
+  padding: 50px;
+  border-radius: 50px;
+  background-color: green;
+  grid-template-columns: repeat(4, 50px);
+}
+
+input {
+  grid-column: span 4;
+  height: 70px;
+  font-size: 30px;
+  border: none;
+  text-align: end;
+}
+
+button {
+  padding: 10px;
+}
+.button {
+  grid-column: span 3;
+}
