@@ -1,12 +1,10 @@
 // Class List
 
 // Add
-// const Add = () => {
-//   const div = document.getElementById("mydiv");
-//   // Add
-//   // div.classList.add("add")
-
-// }
+ const Add = () => {
+  const div = document.getElementById("mydiv");
+  div.classList.add("add")
+}
 
 // Remove
 
